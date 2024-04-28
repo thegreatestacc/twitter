@@ -3,6 +3,6 @@ POST http://localhost:8080/api/v1/accounts/register
 Content-Type: application/json
 
 {
-  "username": "aloha",
-  "password": ""
+  "username": "valdemar@gmail.com",
+  "password": "wow"
 }
