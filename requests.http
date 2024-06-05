@@ -1,8 +1,48 @@
 ### Send POST request with json body
 POST http://localhost:8080/api/v1/accounts/register
 Content-Type: application/json
+Authorization: demo_password
 
 {
-  "username": "valdemar@gmail.com",
-  "password": "wow"
+  "username": "new_demo_user@gmail.com",
+  "password": "new_demo_password"
+}
+
+### Send GET request with just auth
+GET http://localhost:8080/api/v1/demo/just-auth
+Content-Type: application/json
+Authorization: Basic new_demo_user@gmail.com new_demo_password
+
+{
+  "username": "new_demo_user@gmail.com",
+  "password": "new_demo_password"
+}
+
+### Send GET request with role user
+GET http://localhost:8080/api/v1/demo/just-role-user
+Content-Type: application/json
+Authorization: Basic new_demo_user@gmail.com new_demo_password
+
+{
+  "username": "demo_user@gmail.com",
+  "password": "demo_password"
+}
+
+### Send GET request with role admin
+GET http://localhost:8080/api/v1/demo/just-role-admin
+Content-Type: application/json
+Authorization: Basic new_demo_user@gmail.com new_demo_password
+
+{
+  "username": "demo_user@gmail.com",
+  "password": "demo_password"
+}
+
+### Send POST request with json body
+POST http://localhost:8080/api/v1/user-profiles
+Content-Type: application/json
+
+{
+  "nickname": "new_demo_user",
+  "imageLink": "fake-data"
 }

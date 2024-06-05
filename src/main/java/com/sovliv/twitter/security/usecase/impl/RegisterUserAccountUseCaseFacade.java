@@ -1,8 +1,9 @@
-package com.sovliv.twitter.security.usecase;
+package com.sovliv.twitter.security.usecase.impl;
 
 import com.sovliv.twitter.security.mapper.RegisterRequestToUserAccountMapper;
 import com.sovliv.twitter.security.model.UserAccount;
 import com.sovliv.twitter.security.service.UserAccountService;
+import com.sovliv.twitter.security.usecase.RegisterUserAccountUseCase;
 import com.sovliv.twitter.security.web.model.RegisterRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
