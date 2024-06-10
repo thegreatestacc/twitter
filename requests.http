@@ -4,7 +4,7 @@ Content-Type: application/json
 Authorization: demo_password
 
 {
-  "username": "new_demo_user@gmail.com",
+  "username": "another_new_demo_user@gmail.com",
   "password": "new_demo_password"
 }
 
@@ -41,9 +41,9 @@ Authorization: Basic new_demo_user@gmail.com new_demo_password
 ### Send POST request with json body
 POST http://localhost:8080/api/v1/user-profiles
 Content-Type: application/json
-Authorization: Basic new_demo_user@gmail.com new_demo_password
+Authorization: Basic another_new_demo_user@gmail.com new_demo_password
 
 {
-  "nickname": "new_demo_user",
+  "nickname": "another_new_demo_user",
   "imageLink": "fake-data"
 }
