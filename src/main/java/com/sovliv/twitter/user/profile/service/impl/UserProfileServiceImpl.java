@@ -6,6 +6,8 @@ import com.sovliv.twitter.user.profile.service.UserProfileService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
 public class UserProfileServiceImpl implements UserProfileService {
@@ -27,5 +29,10 @@ public class UserProfileServiceImpl implements UserProfileService {
             throw new RuntimeException(errorMessage);
         }
         this.userProfileRepository.save(userProfile);
+    }
+
+    @Override
+    public Optional<UserProfile> findUserProfileById(long userProfileId) {
+        return this.userProfileRepository.findById(userProfileId);
     }
 }
