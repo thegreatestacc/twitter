@@ -54,5 +54,15 @@ Content-Type: application/json
 Authorization: Basic another_new_demo_user@gmail.com new_demo_password
 
 {
-  "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  "message": "new one Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+}
+
+### Send PUT request to edit tweet
+PUT http://localhost:8080/api/v1/tweets
+Content-Type: application/json
+Authorization: Basic another_new_demo_user@gmail.com new_demo_password
+
+{
+  "id": 5,
+  "message": "edited message 5"
 }
